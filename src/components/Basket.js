@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
 
-const Basket = ({props}) => {
+const Basket = ({ props }) => {
     return (
-        <div>
-            Basket
-        </div>
+        <>
+            <div className="block col-1">
+                <h2>Cart Items</h2>
+            </div>
+        </>
     );
 };
 

@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
 
-const Main = ({props}) => {
+const Main = ({ props }) => {
     return (
-        <div>
-            Main
-        </div>
+        <>
+            <div className="block col-2">
+                <h2>Products</h2>
+
+                <div className="row"></div>
+            </div>
+        </>
     );
 };
 
