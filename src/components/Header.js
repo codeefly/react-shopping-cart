@@ -1,10 +1,20 @@
-import React from 'react';
+import React from "react";
 
-const Header = ({props}) => {
+const Header = ({ props }) => {
     return (
-        <div>
-            Header
-        </div>
+        <>
+            <header className="row block center">
+                <div>
+                    <a href="#/">
+                        <h1>Small Shopping Cart</h1>
+                    </a>
+                </div>
+                <div>
+                    <a href="#/">Signin</a>
+                    <a href="#/"> Cart</a>
+                </div>
+            </header>
+        </>
     );
 };
 
