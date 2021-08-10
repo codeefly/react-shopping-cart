@@ -1,6 +1,6 @@
 import React from "react";
 
-const Header = ({ props }) => {
+const Header = ({ countCartItems }) => {
     return (
         <>
             <header className="row block center">
@@ -11,7 +11,14 @@ const Header = ({ props }) => {
                 </div>
                 <div>
                     <a href="#/">Signin</a>
-                    <a href="#/"> Cart</a>
+                    <a href="#/">
+                        Cart {""}
+                        {countCartItems ? (
+                            <button className="badge">{countCartItems}</button>
+                        ) : (
+                            ""
+                        )}
+                    </a>
                 </div>
             </header>
         </>
